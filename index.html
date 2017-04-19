@@ -39,56 +39,15 @@
   <div class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-7"><img class="center-block img-fluid d-block h-50 w-100" src="Barras.PNG"></div>
-        <div class="col-md-3 offset-md-2">
-          <ul class="list-group">
-            <li class="list-group-item">Cras justo odio<span class="tag tag-pill pull-sm-right tag-danger">ooooo</span></li>
-            <li class="list-group-item">Dapibus ac facilisis</li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12"> <button class="accordion">Section 1</button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <button class="accordion">Section 2</button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <button class="accordion">Section 3</button>
-          <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-                acc[i].onclick = function(){
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.display === "block") {
-                        panel.style.display = "none";
-                    } else {
-                        panel.style.display = "block";
-                    }
-                }
-            }
-          </script>
+        <div class="col-md-9"><img class="center-block img-fluid d-block w-100 h-75" src="Barras.PNG"></div>
+        <div class="col-md-3">
           <ul class="nav nav-pills flex-column">
-            <li data-accordion="#accordion" class="nav-item dropdown dropdown-accordion  open"> <a href="#" class="active nav-link">Home</a>
+            <li data-accordion="#accordion" class="nav-item dropdown dropdown-accordion  open"> <a href="#" class="active nav-link">Opciones de Configuración</a>
               <div class="dropdown-menu">
                 <div class="col-md-12 "> </div>
               </div>
             </li>
-            <li class="nav-item"> <a class="nav-link" href="#">Profile</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#">Colores y tamaño</a> </li>
             <li class="nav-item"> <a href="#" class="nav-link">Messages</a> </li>
           </ul>
         </div>
@@ -98,22 +57,63 @@
   <div class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <ul class="nav nav-tabs">
-            <li class="nav-item"> <a href="#" class="active nav-link">Home</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">Profile</a> </li>
-            <li class="nav-item"> <a href="#" class="nav-link">Messages</a> </li>
-          </ul>
+        <div class="col-md-12"> <a href="#" class="btn btn-primary col-md-12">Ejes</a>
+          <form class="">
+            <div class="form-group"> <input type="email" class="form-control" placeholder="Valor máximo X"> </div>
+            <div class="form-group"> <input type="email" class="form-control" placeholder="Título del eje X"> </div>
+            <div class="form-group"> <input type="password" class="form-control" placeholder="Valor Máximo Y"> </div>
+            <div class="form-group"> <input type="email" class="form-control" placeholder="Título del eje Y"> </div>
+          </form>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12"></div>
+        <div class="col-md-12"> <a href="#" class="btn btn-primary col-md-12">Área del Gráfico</a>
+          <form class="">
+            <div class="form-group"> <input type="email" class="form-control" placeholder="Título del gráfico"> </div>
+            <div class="form-group"> <input type="email" class="form-control" placeholder="Subtítulo del gráfico"> </div>
+            <div class="form-group"> <input type="password" class="form-control" placeholder="Color del Borde"> </div>
+            <div class="form-group"> <input type="email" class="form-control" placeholder="Color del fondo"> </div>
+            <div class="form-group"> <input type="email" class="form-control" placeholder="Color del fondo"> </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12"> <a href="#" class="btn btn-primary col-md-12">Leyenda</a>
+          <form class=""> <br>
+            <p><b>Posición de la Leyenda</b></p> <label class="radio-inline"><input type="radio" name="optradio" value="on">Inferior</label> <label class="radio-inline"><input type="radio" name="optradio" value="on">Arriba</label> <label class="radio-inline"><input type="radio" name="optradio" value="on">Derecha</label>            <label class="radio-inline"><input type="radio" name="optradio" value="on">Izquierda</label> <label class="radio-inline"><input type="radio" name="optradio" value="on">Sin legenda</label> <br> <br>
+            <p><b>Alineación de la Leyenda</b></p> <label class="radio-inline"><input type="radio" name="optradio" value="on">Izquierda</label> <label class="radio-inline"><input type="radio" name="optradio" value="on">Centro</label> <label class="radio-inline"><input type="radio" name="optradio" value="on">Derecha</label>            <br> <br> <br>
+            <p><b>Estilos</b></p> <br> </form>
+        </div>
       </div>
     </div>
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <script>
+              var acc = document.getElementsByClassName("accordion");
+              var i;
+  
+              for (i = 0; i < acc.length; i++) {
+                  acc[i].onclick = function(){
+                      this.classList.toggle("active");
+                      var panel = this.nextElementSibling;
+                      if (panel.style.display === "block") {
+                          panel.style.display = "none";
+                      } else {
+                          panel.style.display = "block";
+                      }
+                  }
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
   </div>
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-  <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
 </body>
 
 </html>
