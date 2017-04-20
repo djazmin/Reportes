@@ -39,6 +39,11 @@
   <div class="py-5">
     <div class="container">
       <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="">Nombre del Reporte</h1>
+        </div>
+      </div> <br> <br>
+      <div class="row bg-faded">
         <div class="col-md-9"><img class="center-block img-fluid d-block w-100 h-75" src="Barras.PNG"></div>
         <div class="col-md-3">
           <ul class="nav nav-pills flex-column">
@@ -65,27 +70,6 @@
             <div class="form-group"> <input type="email" class="form-control" placeholder="Título del eje Y"> </div>
           </form>
         </div>
-        <div class="col-md-6">
-          <div class="col-md-12"> <a href="#" class="btn btn-primary col-md-12">Datos del gráfico</a> <br>
-            <p> <b>Indicador de Gestión</b> </p>
-            <form class="">
-              <p> <b>Fecha Inicio</b> </p>
-              <div class="form-group">
-                <div class="input-group date" id="datetimepicker1"> <input type="text" class="form-control"> <span class="input-group-addon">
-                        <span class=" glyphicon-calendar"></span> </span>
-                </div>
-              </div>
-              <script type="text/javascript">
-                $(function () {
-                      $('#datetimepicker1').datetimepicker();
-                  });
-              </script>
-              <div class="form-group"> <input type="email" class="form-control" placeholder="Título del eje X"> </div>
-              <div class="form-group"> <input type="password" class="form-control" placeholder="Valor Máximo Y"> </div>
-              <div class="form-group"> <input type="email" class="form-control" placeholder="Título del eje Y"> </div>
-            </form>
-          </div>
-        </div>
       </div>
       <div class="row">
         <div class="col-md-6"> <a href="#" class="btn btn-primary col-md-12">Área del Gráfico</a>
@@ -97,42 +81,41 @@
             <div class="form-group"> <input type="email" class="form-control" placeholder="Color del fondo"> </div>
           </form>
         </div>
-        <div class="col-md-6"></div>
       </div>
       <div class="row">
         <div class="col-md-6"> <a href="#" class="btn btn-primary col-md-12">Leyenda</a>
-          <form class="h-25 w-25"> <br>
-            <p><b>Posición de la Leyenda</b></p> <label class="radio-inline"><input type="radio" name="optradio" value="on">Inferior</label> <label class="radio-inline"> <input type="radio" name="optradio" value="on">Arriba</label> <label class="radio-inline"><input type="radio" name="optradio" value="on">Derecha</label>            <label class="radio-inline"><input type="radio" name="optradio" value="on">Izquierda</label> <label class="radio-inline"><input type="radio" name="optradio" value="on">Sin legenda</label> <br> <br>
-            <p><b>Alineación de la Leyenda</b></p> <label class="radio-inline"><input type="radio" name="optradio" value="on">Izquierda</label> <label class="radio-inline"><input type="radio" name="optradio" value="on">Centro</label> <label class="radio-inline"><input type="radio" name="optradio" value="on">Derecha</label>            <br> <br>
-            <p><b>Estilos</b></p> <img class="center-block img-fluid d-block w-100 h-25" src="textoConfig.png"> </form>
+          <form class="h-25 "> <br>
+            <p><b>Posición de la Leyenda</b></p> <label class="radio-inline"><input type="radio" name="optradio" value="on">Inferior</label> <label class="radio-inline"> <input type="radio" name="optradio" value="on">Arriba</label> <label class="radio-inline"><input type="radio" name="optradio" value="on">Derecha</label>            <label class="radio-inline"><input type="radio" name="optradio" value="on">Izquierda</label> <label class="radio-inline"><input type="radio" name="optradio" value="on">Sin legenda</label> <br> <br> </form>
         </div>
-        <div class="col-md-6"></div>
       </div>
-    </div>
-    <div class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <script>
-              var acc = document.getElementsByClassName("accordion");
-              var i;
-  
-              for (i = 0; i < acc.length; i++) {
-                  acc[i].onclick = function(){
-                      this.classList.toggle("active");
-                      var panel = this.nextElementSibling;
-                      if (panel.style.display === "block") {
-                          panel.style.display = "none";
-                      } else {
-                          panel.style.display = "block";
-                      }
-                  }
-              }
-            </script>
+      <div class="row">
+        <div class="col-md-6">
+          <form class="h25 ">
+            <p><b>Alineación de la Leyenda</b></p> <label class="radio-inline"><input type="radio" name="optradio" value="on">Izquierda</label> <label class="radio-inline"><input type="radio" name="optradio" value="on">Centro</label> <label class="radio-inline"><input type="radio" name="optradio" value="on">Derecha</label>            <br> <br>
+            <p><b>Estilos</b></p> <img class="center-block img-fluid d-block w-75" src="textoConfig.png"> </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group"> <a href="#" class="btn btn-primary col-md-12">Datos del gráfico</a>
+            <p align="center"> <b> Indicador de Gestión </b></p>
+            <p align="center"> <b> Rango de Fechas </b></p>
+            <div class="bg-faded">
+              <p class="col-md-11"> <b> Fecha de Inicio</b> </p>
+              <div class="input-group date col-md-11" id="datetimepicker1"> <input type="text" class="form-control" placeholder="dd/mm/aaaa"> <span class="input-group-addon">
+                        <span class="fa fa-calendar fa-2x"></span> </span>
+              </div>
+            </div>
+            <div class="bg-faded">
+              <p class="col-md-11"> <b> Fecha Fin</b> </p>
+              <div class="input-group date col-md-11" id="datetimepicker1"> <input type="text" class="form-control" placeholder="dd/mm/aaaa"> <span class="input-group-addon">
+                        <span class="fa fa-calendar fa-2x"></span> </span>
+              </div> <br> </div>
           </div>
         </div>
       </div>
     </div>
+    <div> <br> <br> <span></span> </div>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
